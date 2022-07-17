@@ -90,21 +90,20 @@ header {
   /* Hero Style Start */
   .hero {
     background-image: url("https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .hero-form {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
   }
 
   .hero-form h3 {
@@ -138,11 +137,24 @@ header {
     font-size: 16px;
   }
 
+  .hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+  }
+
   /* Hero Style End */
 
-  .intro {
-    text-align: center;
-  }
+  
   
   .intro h2 {
    
@@ -154,10 +166,11 @@ header {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .steps {
-    text-align: center;
+    
     background: #fce138
   }
 
@@ -168,9 +181,9 @@ header {
   .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
+    
+    
+    
     border-bottom: 3px solid;
   }
 
@@ -207,7 +220,7 @@ header {
   }
 
   .trainers {
-    text-align: center;
+    
   }
 
   .trainer {
@@ -259,11 +272,16 @@ header {
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
   margin-bottom: 35px;
-  color: #024e76
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+
 }
 
 .contact {
-  text-align: center;
+  
   background: #024e76;
 }
 
@@ -313,4 +331,8 @@ header {
   background-color: black;
   font-size: 20px;
   color: red;
+}
+
+.flex-row {
+  display: flex;
 }
